@@ -17,9 +17,9 @@ class SmartPtr
     {
         return *pointer;    
     }
-    T& operator->()
+    T* operator->()
     {
-       return pointer;   
+       return *pointer;   
     }
 
  private:
